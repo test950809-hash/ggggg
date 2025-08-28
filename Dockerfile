@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
     chromium chromium-driver \
     && rm -rf /var/lib/apt/lists/*
 
-# Set Chrome path for Selenium
+# Environment vars so Selenium can find Chrome
 ENV CHROME_BIN=/usr/bin/chromium
 ENV CHROMEDRIVER_PATH=/usr/bin/chromedriver
 
