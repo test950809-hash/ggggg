@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: selenium-flask-api
+    env: docker
+    plan: free
+    branch: main
+    autoDeploy: true
+    dockerfilePath: ./Dockerfile
+    buildCommand: ""
+    startCommand: ""
